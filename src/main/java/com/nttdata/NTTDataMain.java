@@ -1,13 +1,13 @@
-package com.nttdata.nttdatacentersspringtSaFeCaLe;
+package com.nttdata;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NttdatacentersSpringTSaFeCaLeApplication {
+public class NTTDataMain {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NttdatacentersSpringTSaFeCaLeApplication.class, args);
+		SpringApplication.run(NTTDataMain.class, args);
 	}
 
 }
