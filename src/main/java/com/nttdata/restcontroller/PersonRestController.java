@@ -1,8 +1,8 @@
-package com.nttdata.controller;
+package com.nttdata.restcontroller;
+
 
 import javax.validation.Valid;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 import org.thymeleaf.util.StringUtils;
 
 import com.nttdata.repository.Person;
@@ -25,14 +26,13 @@ import com.nttdata.repository.Person;
 * @author Salva Castillo
 *
 */
-@Controller
+@RestController
 @RequestMapping("/home/person/")
-public class PersonController {
+public class PersonRestController {
 
 	public @ResponseBody String home() {
 		return "nombre_persona";
 	}
-	
 	/**
 	 * Capta  solicitud a /home/person/
 	 * 
